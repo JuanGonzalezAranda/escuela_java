@@ -15,7 +15,50 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Empezando POO");
+        Coche miCoche;
+        
+        
+        miCoche= new Coche("Kia", 60); //la instancia se hace con new
+        //miCoche.marca = "Kia";
+     
+       // miCoche.capacidadDeposito = 60;
+       // miCoche.numRuedas = 4;
+        miCoche.esGasolina=true;
+       
+       // miCoche.nivelDeposito=30;//empezamos con medio deposito
+       miCoche.setNivelDep(30);
+        
+        System.out.println("Coche creado: " + miCoche.getMarca());
+        //System.out.println("Nivel deposito " + miCoche.nivelDeposito + " litros");
+        System.out.println("Nivel deposito " + miCoche.getNivelDep() + " litros");
+        
+        
+        Coche otroCoche=miCoche; //new Coche()
+        //otroCoche.marca="Seat"; ya no se puede
+        
+           
+        System.out.println("Coche creado: " + otroCoche.getMarca());
+         otroCoche.vaciarDeposito();
+        //vaciarDeposito(miCoche);
+       // System.out.println("Nivel deposito " + otroCoche.nivelDeposito + " litros");
+         System.out.println("Nivel deposito " + otroCoche.getNivelDep() + " litros");
+        
+        miCoche.arrancado=true;
+       // miCoche.nivelDeposito=-2;
+        miCoche.echarCarburante(-2);
+        for (int i=0;i<3;i++) 
+            miCoche.acelerar();
+        
+        miCoche.mostrar();
+        
+        
+    }
+      /*  public static void vaciarDeposito(Coche c) {
+            c.nivelDeposito=3;
+            System.out.println("Deposito vaciado de " + c.marca
+            + "\n   Nivel: " + c.nivelDeposito);
+        }*/
     }
     
-}
+

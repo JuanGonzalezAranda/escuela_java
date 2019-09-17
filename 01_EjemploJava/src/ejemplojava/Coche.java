@@ -8,11 +8,9 @@ public class Coche { //hereda de Object
    public static final int CAPACIDAD_DEPOSITO=60;
     private final byte numRuedas; //valor constante por el final
     private String marca;
-    
-    boolean esGasolina;
+    private boolean esGasolina;
     private double nivelDeposito;
-    boolean arrancado;
-
+    private boolean arrancado;
     
    public Coche(String marca, boolean esGasolina){
        this.numRuedas=4;
@@ -61,4 +59,21 @@ public class Coche { //hereda de Object
    public String getMarca() {
         return marca;
     }
+
+    public boolean isEsGasolina() {
+        return esGasolina;
+    }
+
+    public boolean isArrancado() {
+        return arrancado;
+    }
+
+    public double getNivelDeposito() {
+        return nivelDeposito;
+    }
+
+    public void setArrancado(boolean arrancado) {
+        this.arrancado = arrancado;
+    }
+    
 }

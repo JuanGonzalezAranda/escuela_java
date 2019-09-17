@@ -24,7 +24,7 @@ public class Main {
      
        // miCoche.capacidadDeposito = 60;
        // miCoche.numRuedas = 4;
-        miCoche.esGasolina=true;
+       // miCoche.esGasolina=true;
        
        // miCoche.nivelDeposito=30;//empezamos con medio deposito
        miCoche.echarCarburante(30);
@@ -44,7 +44,8 @@ public class Main {
        // System.out.println("Nivel deposito " + otroCoche.nivelDeposito + " litros");
          System.out.println("Nivel deposito " + otroCoche.getNivelDep() + " litros");
         
-        miCoche.arrancado=true;
+        //miCoche.arrancado=true;
+         miCoche.setArrancado(true);
        // miCoche.nivelDeposito=-2;
         miCoche.echarCarburante(-2);
         for (int i=0;i<3;i++) 

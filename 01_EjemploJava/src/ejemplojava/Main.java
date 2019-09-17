@@ -19,7 +19,7 @@ public class Main {
         Coche miCoche;
         
         
-        miCoche= new Coche("Kia", 60); //la instancia se hace con new
+        miCoche= new Coche("Kia", true); //la instancia se hace con new
         //miCoche.marca = "Kia";
      
        // miCoche.capacidadDeposito = 60;
@@ -27,8 +27,8 @@ public class Main {
         miCoche.esGasolina=true;
        
        // miCoche.nivelDeposito=30;//empezamos con medio deposito
-       miCoche.setNivelDep(30);
-        
+       miCoche.echarCarburante(30);
+        System.out.println("Todos los coches tienen: " + Coche.CAPACIDAD_DEPOSITO);
         System.out.println("Coche creado: " + miCoche.getMarca());
         //System.out.println("Nivel deposito " + miCoche.nivelDeposito + " litros");
         System.out.println("Nivel deposito " + miCoche.getNivelDep() + " litros");

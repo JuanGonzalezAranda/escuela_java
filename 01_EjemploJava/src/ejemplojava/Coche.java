@@ -5,19 +5,20 @@ package ejemplojava;
  * @author Juan Gonzalez
  */
 public class Coche { //hereda de Object
-    
+   public static final int CAPACIDAD_DEPOSITO=60;
     private final byte numRuedas; //valor constante por el final
     private String marca;
-    int capacidadDeposito;
+    
     boolean esGasolina;
     private double nivelDeposito;
     boolean arrancado;
 
     
-   public Coche(String marca, int capacidadDeposito){
+   public Coche(String marca, boolean esGasolina){
        this.numRuedas=4;
        this.marca=marca;
-       this.capacidadDeposito=capacidadDeposito;
+       this.esGasolina=esGasolina;
+      // this.capacidadDeposito=capacidadDeposito;
    }
         
     public double getNivelDep(){
@@ -31,8 +32,8 @@ public class Coche { //hereda de Object
     public void echarCarburante(double cantidad){
         if (cantidad>0)
             this.nivelDeposito += cantidad;
-        if (nivelDeposito > capacidadDeposito)
-            nivelDeposito=capacidadDeposito;
+        if (nivelDeposito > CAPACIDAD_DEPOSITO)
+            nivelDeposito=CAPACIDAD_DEPOSITO;
     }
     
     public void setNivelDep(double nivelDeposito){

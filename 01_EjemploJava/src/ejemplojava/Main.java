@@ -19,7 +19,7 @@ public class Main {
         Coche miCoche;
         
         
-        miCoche= new Coche("Kia", true); //la instancia se hace con new
+        miCoche= new Coche("Kia", true, TipoColor.ROJO); //la instancia se hace con new
         //miCoche.marca = "Kia";
      
        // miCoche.capacidadDeposito = 60;
@@ -54,6 +54,7 @@ public class Main {
         miCoche.mostrar();
         
         
+    
     }
       /*  public static void vaciarDeposito(Coche c) {
             c.nivelDeposito=3;
